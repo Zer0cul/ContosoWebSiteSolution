@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoWebSite", "ContosoWe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoWebSite.Tests", "ContosoWebSite.Tests\ContosoWebSite.Tests.csproj", "{11092B8F-47E7-4818-8D0E-4BA272053BD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSLesson2", "JSLesson2\JSLesson2.csproj", "{0F0D1D93-189F-4ACE-974A-BD7F0B736A65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{11092B8F-47E7-4818-8D0E-4BA272053BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11092B8F-47E7-4818-8D0E-4BA272053BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11092B8F-47E7-4818-8D0E-4BA272053BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0D1D93-189F-4ACE-974A-BD7F0B736A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0D1D93-189F-4ACE-974A-BD7F0B736A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0D1D93-189F-4ACE-974A-BD7F0B736A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0D1D93-189F-4ACE-974A-BD7F0B736A65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
