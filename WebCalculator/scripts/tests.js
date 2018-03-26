@@ -32,4 +32,34 @@ test("Add Test", function () {
     QUnit.triggerEvent(btnPlus, "click");
     var expected = '30';
     equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+
+});
+
+test("Subtrack Test", function () {
+    expect(1);
+    txtInput.value = '10';
+    txtResult.value = '20';
+    var btnMinus = document.getElementById('btnMinus');
+    QUnit.triggerEvent(btnMinus, "click");
+    var expected = '10';
+    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value ' + txtResult.value);
+});
+
+test("Clear Entry Test", function () {
+    expect(1);
+    txtInput.value = '10';
+    QUnit.triggerEvent(btnClearEntry, "click");
+    var expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value:' + txtInput.value);
+});
+
+test("Clear Test", function () {
+    expect(2);
+    txtInput.value = '10';
+    txtResult.value = '20';
+    QUnit.triggerEvent(btnClear, "click");
+    var expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
+    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+
 });
