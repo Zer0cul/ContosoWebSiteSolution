@@ -1,5 +1,15 @@
 ﻿module('Calculator Test Suite', { setup: function () { initialize(); } });
 
+test("Initialize Test", function () {
+    expect(2);
+    //txtInput.value = '';
+    //txtResult.value = '';
+    //initialize();
+    var expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + '  Actual value: ' + txtInput.value);
+    equal(txtResult.value, expected, 'Expected value: ' + expected + '  Actual value: ' + txtResult.value);
+});
+
 test("Btn5 Click Test", function () {
     expect(1);
     var btn = document.getElementById('btn5');
@@ -25,24 +35,28 @@ test("Button Click Test", function () {
 });
 
 test("Add Test", function () {
-    expect(1);
+    expect(2);
     txtInput.value = '10';
     txtResult.value = '20';
     var btnPlus = document.getElementById('btnPlus');
     QUnit.triggerEvent(btnPlus, "click");
     var expected = '30';
     equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+    expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
 
 });
 
 test("Subtrack Test", function () {
-    expect(1);
+    expect(2);
     txtInput.value = '10';
     txtResult.value = '20';
     var btnMinus = document.getElementById('btnMinus');
     QUnit.triggerEvent(btnMinus, "click");
     var expected = '10';
     equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value ' + txtResult.value);
+    expected = '0';
+    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
 });
 
 test("Clear Entry Test", function () {
