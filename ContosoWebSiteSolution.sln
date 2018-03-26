@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoWebSite", "ContosoWebSite\ContosoWebSite.csproj", "{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSLesson2", "JSLesson2\JSLesson2.csproj", "{0F0D1D93-189F-4ACE-974A-BD7F0B736A65}"
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "JSWindows81Store", "JSWindows81Store\JSWindows81Store.jsproj", "{F844BA2F-52BB-45B0-B53B-A12DD2EFEB00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCalculator", "WebCalculator\WebCalculator.csproj", "{37871FC9-0841-47CE-B0E0-39CECC22B0EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,16 @@ Global
 		{F844BA2F-52BB-45B0-B53B-A12DD2EFEB00}.Release|x86.ActiveCfg = Release|x86
 		{F844BA2F-52BB-45B0-B53B-A12DD2EFEB00}.Release|x86.Build.0 = Release|x86
 		{F844BA2F-52BB-45B0-B53B-A12DD2EFEB00}.Release|x86.Deploy.0 = Release|x86
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
