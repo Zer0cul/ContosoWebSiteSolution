@@ -58,31 +58,30 @@ test("Add Test", function () {
 
 test("Subtrack Test", function () {
     expect(2);
-    txtInput.value = '10';
-    txtResult.value = '20';
-    var btnMinus = document.getElementById('btnMinus');
-    QUnit.triggerEvent(btnMinus, "click");
+    $('#txtInput').val('10');
+    $('#txtResult').val('20');
+    $('#btnMinus').triggerHandler('click');
     var expected = '10';
-    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value ' + txtResult.value);
+    equal($('#txtResult').val(), expected, 'Expected value: ' + expected + ' Actual value ' + $('#txtResult').val());
     expected = '0';
-    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
+    equal($('#txtInput').val(), expected, 'Expected value: ' + expected + ' Actual value: ' + $('#txtInput').val());
 });
 
 test("Clear Entry Test", function () {
     expect(1);
-    txtInput.value = '10';
-    QUnit.triggerEvent(btnClearEntry, "click");
+    $('#txtInput').val('10');
+    $('#btnClearEntry').triggerHandler("click");
     var expected = '0';
-    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value:' + txtInput.value);
+    equal($('#txtInput').val(), expected, 'Expected value: ' + expected + ' Actual value:' + $('#txtInput').val());
 });
 
 test("Clear Test", function () {
     expect(2);
-    txtInput.value = '10';
-    txtResult.value = '20';
-    QUnit.triggerEvent(btnClear, "click");
+    $('#txtInput').val('10');
+    $('#txtResult').val('20');
+    $('#btnClear').triggerHandler( "click");
     var expected = '0';
-    equal(txtInput.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtInput.value);
-    equal(txtResult.value, expected, 'Expected value: ' + expected + ' Actual value: ' + txtResult.value);
+    equal($('#txtInput').val(), expected, 'Expected value: ' + expected + ' Actual value: ' + $('#txtInput').val());
+    equal($('#txtResult').val(), expected, 'Expected value: ' + expected + ' Actual value: ' + $('#txtResult').val());
 
 });
