@@ -1,13 +1,11 @@
-﻿module('Calculator Test Suite', { setup: function () { initialize(); } });
+﻿/// <reference path="_references.js" />
+module('Calculator Test Suite', { setup: function () { calculatorNamespace.initialize(); } });
 
 test("Initialize Test", function () {
     expect(2);
-    //txtInput.value = '';
-    //txtResult.value = '';
-    //initialize();
     var expected = '0';
-    equal(txtInput.value, expected, 'Expected value: ' + expected + '  Actual value: ' + txtInput.value);
-    equal(txtResult.value, expected, 'Expected value: ' + expected + '  Actual value: ' + txtResult.value);
+    equal($('#txtInput').val(), expected, 'Expected value: ' + expected + '  Actual value: ' + $('#txtInput').val());
+    equal($('#txtResult').val(), expected, 'Expected value: ' + expected + '  Actual value: ' + $('#txtResult').val());
 });
 
 test("Btn5 Click Test", function () {

@@ -3,7 +3,8 @@
 <head>
     <title>Web Calculator</title>
     <link href="Content/default.css" rel="stylesheet" />
-    <script type="text/javascript" src="scripts/CalclatorLibrary.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="scripts/CalculatorLibrary.js"></script>
 </head>
 <body>
     <div id="container">
@@ -36,26 +37,26 @@
                         <td><button id="btnClear">C</button></td>
                     </tr>
                     <tr>
-                        <td><button id="btn7">7</button></td>
-                        <td><button id="btn8">8</button></td>
-                        <td><button id="btn9">9</button></td>
+                        <td><button id="btnNumber7">7</button></td>
+                        <td><button id="btnNumber8">8</button></td>
+                        <td><button id="btnNumber9">9</button></td>
                         <td><button id="btnPlus">+</button></td>
                     </tr>
                     <tr>
-                        <td><button id="btn4">4</button></td>
-                        <td><button id="btn5">5</button></td>
-                        <td><button id="btn6">6</button></td>
+                        <td><button id="btnNumber4">4</button></td>
+                        <td><button id="btnNumber5">5</button></td>
+                        <td><button id="btnNumber6">6</button></td>
                         <td><button id="btnMinus">-</button></td>
                     </tr>
                     <tr>
-                        <td><button id="btn1">1</button></td>
-                        <td><button id="btn2">2</button></td>
-                        <td><button id="btn3">3</button></td>
+                        <td><button id="btnNumber1">1</button></td>
+                        <td><button id="btnNumber2">2</button></td>
+                        <td><button id="btnNumber3">3</button></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button id="btn0">0</button></td>
+                        <td><button id="btnNumber0">0</button></td>
                         <td></td>
                         <td></td>
                     </tr>   
@@ -65,6 +66,8 @@
         <aside><p>Advertisements</p></aside>
         <footer><p>Copyright &copy; 2012, Contoso Ltd., All rights reserved.</p></footer>
     </div>
-    <script type="text/javascript">window.addEventListener('load', initialize, false);</script>
+    <script type="text/javascript">$(document).ready(function () {
+    calculatorNamespace.initialize();
+        });</script>
 </body>
 </html>
