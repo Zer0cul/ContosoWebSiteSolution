@@ -62,6 +62,7 @@
     <Content Include="CalculatorTests.html" />
     <Content Include="Content\default.css" />
     <Content Include="Content\qunit.css" />
+    <Content Include="ContactUs.html" />
     <Content Include="default.html" />
     <Content Include="Images\ContosoLogo.jpg" />
     <Content Include="Images\logo100x100.png" />
