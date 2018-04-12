@@ -9,6 +9,11 @@ Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "JSWindows81Store", "JSWindo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCalculator", "WebCalculator\WebCalculator.csproj", "{37871FC9-0841-47CE-B0E0-39CECC22B0EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nodejs", "nodejs", "{61816848-A116-4061-B5AE-1B7966E8C151}"
+	ProjectSection(SolutionItems) = preProject
+		nodejs\HelloWorld.js = nodejs\HelloWorld.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
