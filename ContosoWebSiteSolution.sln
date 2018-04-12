@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCalculator", "WebCalcula
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nodejs", "nodejs", "{61816848-A116-4061-B5AE-1B7966E8C151}"
 	ProjectSection(SolutionItems) = preProject
+		nodejs\hello.js = nodejs\hello.js
 		nodejs\HelloWorld.js = nodejs\HelloWorld.js
+		nodejs\index.js = nodejs\index.js
 	EndProjectSection
 EndProject
 Global

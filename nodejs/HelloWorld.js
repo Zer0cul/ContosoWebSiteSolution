@@ -1,5 +1,5 @@
 // JavaScript source code
-var http = require('http')
+var http = require('http');
 var url = require('url');
 http.createServer(function (request, response) {
     var url_parts = url.parse(request.url, true);
