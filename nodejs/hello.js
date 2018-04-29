@@ -1,4 +1,5 @@
-// JavaScript source code
+// JavaScript source code 
+//Reading Chapter 8 sample page 344
 var http = require('http');
 var url = require('url');
 
