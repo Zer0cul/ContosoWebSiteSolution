@@ -1,0 +1,26 @@
+{
+  "name": "math_example",
+  "version": "1.0.0",
+  "description": "An example of creating a package. It is created while Chapter 8 reading.",
+  "main": "bin/main.js",
+  "bin": {
+    "math_example": "main.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \\\"Error: not test specified\\\" && exit 1"
+  },
+  "keywords": [
+    "math",
+    "example",
+    "addition",
+    "subtraction",
+    "multiplication",
+    "division",
+    "fibonacci"
+  ],
+  "author": "Glenn Johnson",
+  "license": "UNLICENSED"
+}
