@@ -1,11 +1,8 @@
 {
   "name": "z9math_example",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "An example of creating a package. It is created while Chapter 8 reading.",
   "main": "bin/main.js",
-  "bin": {
-    "math_example": "main.js"
-  },
   "directories": {
     "lib": "lib"
   },
