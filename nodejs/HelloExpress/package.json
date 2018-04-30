@@ -15,6 +15,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "formidable": "1.2.1",
     "express": "4.16.3"
   }
 }
