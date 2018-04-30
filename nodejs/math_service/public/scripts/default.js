@@ -12,12 +12,9 @@ $(document).ready(function () {
 // DELETE for division
 
 function addNumbers() {
-    var x = $('#x').val();
-    var y = $('#y').val();
-    var data = { "x": x, "y": y };
-    $.getJSON('/addition', data, function (data) {
-        $('#result').html(data.result);
-    });
+
+    var data = getFormData();
+    serverAddition(data).done(displayResult);
     /*
     $.ajax({
         url: '/addition',
@@ -31,45 +28,55 @@ function addNumbers() {
     });
     */
 }
+
 function subtractNumbers() {
-    var x = $('#x').val();
-    var y = $('#y').val();
-    var data = { "x": x, "y": y };
-    $.post('/subtraction', data, function (data) {
-        $('#result').html(data.result);
-    });
+    var data = getFormData();
+    serverSubtraction(data).done(displayResult);
 }
 
 function multiplyNumbers(){
-    var x = $('#x').val();
-    var y = $('#y').val();
-    var data = { "x": x, "y": y };
-    $.ajax({
+    var data = getFormData();
+    serverMultiplicatoin(data).done(displayResult);
+}
+
+function divideNumbers() {
+
+    var data = getFormData();
+    serverDivision(data).done(displayResult);
+}
+
+function serverAddition(data) {
+    return $.getJSON('/addition', data);
+}
+function serverSubtraction(data) {
+    return $.post('/subtraction', data, 'json');
+}
+function serverMultiplicatoin(data) {
+    return $.ajax({
         url: '/multiply',
         data: data,
         type: 'PUT',
         dataType: 'json',
-        cache: false,
-        success: function (data) {
-            $('#result').html(data.result);
-        }
+        cache: false
     });
 }
-
-function divideNumbers() {
-    var x = $('#x').val();
-    var y = $('#y').val();
-    var data = { "x": x, "y": y };
-    $.ajax({
+function serverDivision(data) {
+    return $.ajax({
         url: '/divide',
         data: data,
         type: 'DELETE',
         dataType: 'json',
-        cache: false,
-        success: function (data) {
-            $('#result').html(data.result);
-        }
+        cache: false
     });
+}
+
+function getFormData() {
+    var x = $('#x').val();
+    var y = $('#y').val();
+    return { "x": x, "y": y };
+}
+function displayResult(serverData) {
+    $('#result').html(serverData.result);
 }
 
 function updateProgress(evt) {
