@@ -19,7 +19,7 @@ function fibo(count) {
 
 function private_Fibo(count, counter, first, second) {
     if (count == 0) return 0;
-    if (conter == undefined) {
+    if (counter == undefined) {
         counter = 1;
         first = 1;
         second = 2;
