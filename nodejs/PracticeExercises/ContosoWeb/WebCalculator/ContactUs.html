@@ -4,6 +4,7 @@
     <title>Contact Us</title>
     <link href="Content/default.css" rel="stylesheet" />
     <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="scripts/ContactUs.js"></script>
 </head>
 <body>
     <div id="container">
@@ -23,7 +24,7 @@
                         <label for="firstName">First Name</label>
                         <input type="text" id="firstName" name="firstName" required="required" />
                     </div>
-                    <div>         
+                    <div>
                         <label for="lastName">Last Name:</label>
                         <input type="text" id="lastName" name="lastName" required="required" />
                     </div>
@@ -37,11 +38,13 @@
                         </textarea>
                     </div>
                     <div>
-                        <button type="submit" id="submit" name="submit">Submit</button>
+                        <button type="button" id="submit" name="submit">Submit</button>
                     </div>
                 </form>
+                <div id="result"></div>
             </div>
         </div>
+        
         <aside><p>Advertisements</p></aside>
         <footer><p>Copyright &copy; 2012, Contoso Ltd., All rights reserved.</p></footer>
     </div>
