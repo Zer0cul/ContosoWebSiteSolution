@@ -17,10 +17,10 @@ function addNumbers() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             var jsonObject = JSON.parse(xmlhttp.response);
             result.innerHTML = jsonObject.result;
-        };
-    };
+        }
+    }
     xmlhttp.addEventListener("progress", updateProgress, false);
-    xmlhttp.addEventListener("error", failed, false);
+    xmlhttp.addEventListener("error", transferFailed, false);
     xmlhttp.addEventListener("abort", canceled, false); 
     xmlhttp.open("GET", "addition?x=" + x + "&y=" + y, false);
     xmlhttp.send();
