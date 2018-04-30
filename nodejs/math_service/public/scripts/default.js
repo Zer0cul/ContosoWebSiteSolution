@@ -7,6 +7,10 @@ function addNumbers() {
     var x = $('#x').val();
     var y = $('#y').val();
     var data = { "x": x, "y": y };
+    $.getJSON('/addition', data, function (data) {
+        $('#result').html(data.result);
+    });
+    /*
     $.ajax({
         url: '/addition',
         data: data,
@@ -17,6 +21,7 @@ function addNumbers() {
             $('#result').html(data.result);
         }       
     });
+    */
 }
 
 function updateProgress(evt) {
