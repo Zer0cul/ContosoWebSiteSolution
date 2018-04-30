@@ -42,7 +42,7 @@ function multiplyNumbers(){
 function divideNumbers() {
 
     var data = getFormData();
-    serverDivision(data).done(displayResult);
+    serverDivision(data).done(displayResult).fail(displayError);
 }
 
 function serverAddition(data) {
@@ -77,6 +77,11 @@ function getFormData() {
 }
 function displayResult(serverData) {
     $('#result').html(serverData.result);
+}
+function displayError(serverData, error) {
+    var value = 'No result';
+    if ('result' in serverData) value = serverData.result;
+    $('#result').html(value + ' - ' + error);
 }
 
 function updateProgress(evt) {
