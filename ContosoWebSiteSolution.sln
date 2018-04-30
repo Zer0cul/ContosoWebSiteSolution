@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSLesson2", "JSLesson2\JSLesson2.csproj", "{0F0D1D93-189F-4ACE-974A-BD7F0B736A65}"
 EndProject
@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nodejs", "nodejs", "{618168
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "math_example", "math_example", "{3C6B576A-FBE8-421E-A031-FF467791F80B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoWebSite", "ContosoWebSite\ContosoWebSite.csproj", "{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +82,22 @@ Global
 		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Release|ARM.ActiveCfg = Release|Any CPU
 		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Release|x64.ActiveCfg = Release|Any CPU
 		{37871FC9-0841-47CE-B0E0-39CECC22B0EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Debug|ARM.Build.0 = Debug|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Debug|x64.Build.0 = Debug|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Debug|x86.Build.0 = Debug|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Release|ARM.Build.0 = Release|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Release|x64.ActiveCfg = Release|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Release|x64.Build.0 = Release|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Release|x86.ActiveCfg = Release|Any CPU
+		{FCF1BDE2-B02C-46B7-852C-F1D8F80AC68D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
