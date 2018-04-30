@@ -1,7 +1,7 @@
 {
   "name": "z9math_example",
-  "version": "1.0.3",
-  "description": "An example of creating a package. It is created while Chapter 8 reading.",
+  "version": "1.0.4",
+  "description": "An example of creating a package. It is created while Chapter 8 reading. Fixed error in Fibo",
   "main": "bin/main.js",
   "directories": {
     "lib": "lib"
