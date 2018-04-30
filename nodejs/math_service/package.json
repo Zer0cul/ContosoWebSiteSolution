@@ -1,7 +1,7 @@
 {
-  "name": "helloexpress",
+  "name": "math_service",
   "version": "1.0.0",
-  "description": "A simple Web site",
+  "description": "A math service using z9math_example lib",
   "main": "index.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
@@ -16,6 +16,7 @@
   "private": true,
   "dependencies": {
     "express": "4.16.3",
-    "formidable": "1.2.1"
+    "formidable": "1.2.1",
+    "z9math_example": "1.0.4"
   }
 }
