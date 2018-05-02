@@ -1,6 +1,6 @@
 ﻿/// <reference path="jquery-3.3.1.js" />
 
-var milliseconds = 1000;
+var milliseconds = 250;
 var opacity = 0.5;
 
 function displayCoverAsync() {
