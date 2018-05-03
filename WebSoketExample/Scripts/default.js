@@ -2,6 +2,7 @@
 
 var wsUri = 'ws://echo.websocket.org';
 var webSocket;
+var timerId = 0;
 
 $(document).ready(function () {
     $('#txtMessage').html = '1';
@@ -48,9 +49,11 @@ function doSend() {
 
 function onOpen(evt) {
     writeOutput("CONNECTED");
+    keepAlive();
 }
 
 function onClose(evt) {
+    cancelKeepAlive();
     writeOutput("DISCONNECTED");
 }
 
@@ -60,4 +63,17 @@ function onMessage(evt) {
 
 function onError(evt) {
     writeOutput('ERROR: ' + evt.data);
+}
+
+function keepAlive() {
+    var timeout = 15000;
+    if (webSocket.readyState == webSocket.OPEN) {
+        webSocket.send(‘’);
+    }
+    timerId = setTimeout(keepAlive, timeout);
+}
+function cancelKeepAlive() {
+    if (timerId) {
+        cancelTimeout(timerId);
+    }
 }
