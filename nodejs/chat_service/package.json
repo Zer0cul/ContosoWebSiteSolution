@@ -1,0 +1,22 @@
+{
+  "name": "chat_service",
+  "version": "0.0.0",
+  "description": "A simple chat service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "service",
+    "Socket.IO",
+    "WebSocket"
+  ],
+  "author": "Mykhaylo Rudakov",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "4.16.3",
+    "socket.io": "2.1.0"
+  }
+}
